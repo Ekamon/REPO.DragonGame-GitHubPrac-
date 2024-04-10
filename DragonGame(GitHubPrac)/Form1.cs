@@ -27,7 +27,7 @@ namespace DragonGame_GitHubPrac_
             {
                 rtbOutput.Text = "You didnt do anything and a homeless man kills you";
             }
-
+            //This code is very coding
         }
     }
 }
