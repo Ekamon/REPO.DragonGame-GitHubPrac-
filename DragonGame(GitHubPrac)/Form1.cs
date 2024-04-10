@@ -14,7 +14,7 @@ namespace DragonGame_GitHubPrac_
         {
             //Comment added through GitHub editing
 
-            if (txtPlayerName.Text != "") 
+            if (txtPlayerName.Text != "" && txtDragonName.Text != "") 
             {
 
                 playerName = txtPlayerName.Text;
@@ -23,6 +23,11 @@ namespace DragonGame_GitHubPrac_
                 rtbOutput.Text = "Player Name: " + playerName +
                                  "\nDragon Name: " + dragonName;
             }
+            else
+            {
+                rtbOutput.Text = "You didnt do anything and a homeless man kills you";
+            }
+
         }
     }
 }
