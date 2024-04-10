@@ -13,12 +13,16 @@ namespace DragonGame_GitHubPrac_
         private void btnSave_Click(object sender, EventArgs e)
         {
             //Comment added through GitHub editing
-            
-            playerName = txtPlayerName.Text;
-            dragonName = txtDragonName.Text;
 
-            rtbOutput.Text = "Player Name: " + playerName +
-                             "\nDragon Name: " + dragonName;
+            if (txtPlayerName.Text != "") 
+            {
+
+                playerName = txtPlayerName.Text;
+                dragonName = txtDragonName.Text;
+
+                rtbOutput.Text = "Player Name: " + playerName +
+                                 "\nDragon Name: " + dragonName;
+            }
         }
     }
 }
