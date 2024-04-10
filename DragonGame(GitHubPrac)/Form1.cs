@@ -2,19 +2,21 @@ namespace DragonGame_GitHubPrac_
 {
     public partial class Form1 : Form
     {
+        string playerName;
+        string dragonName;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            playerName = txtPlayerName.Text;
+            dragonName = txtDragonName.Text;
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            rtbOutput.Text = "Player Name: " + playerName +
+                             "\nDragon Name: " + dragonName;
         }
     }
 }

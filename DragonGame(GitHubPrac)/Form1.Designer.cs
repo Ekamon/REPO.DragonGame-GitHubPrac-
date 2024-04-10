@@ -52,7 +52,6 @@
             txtPlayerName.Name = "txtPlayerName";
             txtPlayerName.Size = new Size(1069, 96);
             txtPlayerName.TabIndex = 1;
-            txtPlayerName.TextChanged += textBox1_TextChanged;
             // 
             // lblDragonName
             // 
@@ -70,7 +69,6 @@
             txtDragonName.Name = "txtDragonName";
             txtDragonName.Size = new Size(1072, 93);
             txtDragonName.TabIndex = 3;
-            txtDragonName.TextChanged += textBox2_TextChanged;
             // 
             // btnSave
             // 
@@ -80,6 +78,7 @@
             btnSave.TabIndex = 5;
             btnSave.Text = "SAVE!!!!";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // rtbOutput
             // 
